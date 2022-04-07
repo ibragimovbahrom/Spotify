@@ -45,5 +45,7 @@ namespace Spotify.Data
                 .WithMany(c => c.Musics)
                 .HasForeignKey(x => x.AuthorId);
         }
+
+        public DbSet<Spotify.Models.Authors> Authors { get; set; }
     }
 }
